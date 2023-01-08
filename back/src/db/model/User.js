@@ -1,8 +1,6 @@
 import bcrypt from "bcrypt";
 import { db } from "../db";
 import { v4 } from "uuid";
-import { nextTick } from "process";
-import { Prisma } from "@prisma/client";
 
 class User {
   static async createUserByEmailAndPassword(data) {
